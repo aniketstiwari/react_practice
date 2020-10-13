@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+//How to use setState
 class Counter extends Component {
     constructor(props){
         super(props);
