@@ -4,6 +4,7 @@ import EventBind from './EventBind';
 import Greet from './Greet';
 import Welcome from './Welcome';
 import ParentComponent from './ParentComponent';
+import UserGreeting from './UserGreeting';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <Greet name="aniket" movie="inception"/> */}
       {/* <Welcome name="aniket" movie="inception"/> */}
       {/* <EventBind /> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+      <UserGreeting/>
     </>
   );
 }
