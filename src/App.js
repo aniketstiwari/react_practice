@@ -5,6 +5,7 @@ import Greet from './Greet';
 import Welcome from './Welcome';
 import ParentComponent from './ParentComponent';
 import UserGreeting from './UserGreeting';
+import NameList from './NameList';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <Welcome name="aniket" movie="inception"/> */}
       {/* <EventBind /> */}
       {/* <ParentComponent/> */}
-      <UserGreeting/>
+      {/* <UserGreeting/> */}
+      <NameList/>
     </>
   );
 }
