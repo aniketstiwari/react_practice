@@ -50,8 +50,10 @@ function NameList() {
             skill: 'javascript'
         }
     ]
-
-    const personsList = persons.map(person => <Person name={person.name} skill={person.skill}/>);
+    //Note Key props are not accessible in child components
+    //THe purpose of key help react to identify which component has changed, added or removed
+    //and plays a crucial role while doing UI update
+    const personsList = persons.map((person, index) => <Person key={index} name={person.name} skill={person.skill}/>);
     return(<>{personsList}</>)
 
 }
