@@ -6,21 +6,35 @@ class LifeCycleB extends Component {
         this.state = {
             name: "shivam"
         }
-        console.log("LifeCycleB 1")
+        console.log("LifeCycleB constructor")
     }
 
     static getDerivedStateFromProps(props, state){
         //this method take two arguments props and state and has to return new state or null
-        console.log("LifeCycleB 2")
+        console.log("LifeCycleB getDerivedStateFromProps")
         return null;
     }
 
     componentDidMount() {
-        console.log("LifeCycleB 4")
+        console.log("LifeCycleB componentDidMount")
+    }
+
+    shouldComponentUpdate(){
+        console.log("LifeCycleB shouldComponentUpdate")
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log("LifeCycleB getSnapshotBeforeUpdate");
+        return null
+    }
+
+    componentDidUpdate() {
+        console.log("LifeCycleB componentDidUpdate")
     }
 
     render(){
-        console.log("LifeCycleB 3")
+        console.log("LifeCycleB render")
         return <div>LifeCycleB hii</div>
     }
 }

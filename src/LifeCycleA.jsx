@@ -7,23 +7,44 @@ class LifeCycleA extends Component {
         this.state = {
             name: "Aniket"
         }
-        console.log("LifeCycleA 1")
+        console.log("LifeCycleA constructor")
     }
 
     static getDerivedStateFromProps(props, state){
         //this method take two arguments props and state and has to return new state or null
-        console.log("LifeCycleA 2")
+        console.log("LifeCycleA getDerivedStateFromProps")
         return null;
     }
 
     componentDidMount() {
-        console.log("LifeCycleA 4")
+        console.log("LifeCycleA componentDidMount")
+    }
+
+    shouldComponentUpdate(){
+        console.log("LifeCycleA shouldComponentUpdate")
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log("LifeCycleA getSnapshotBeforeUpdate")
+        return null
+    }
+
+    componentDidUpdate() {
+        console.log("LifeCycleA componentDidUpdate")
+    }
+
+    ChangeState = () => {
+        this.setState({
+            name: "Anike tIWARI"
+        })
     }
 
     render(){
-        console.log("LifeCycleA 3")
+        console.log("LifeCycleA render")
         return <>
           <div>hii</div>
+          <button onClick={this.ChangeState}>Click me</button>
           <LifeCycleB/>
         </>
     }
