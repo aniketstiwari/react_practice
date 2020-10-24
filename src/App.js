@@ -18,6 +18,7 @@ import PureComp from './PureComp';
 import ParentComp from './ParentComp';
 import RefsDemo from './RefsDemo';
 import FocusInput from './FocusInput';
+import FRParentInput from './FRParentInput';
 
 function App() {
   return (
@@ -49,7 +50,9 @@ function App() {
 
       {/* <RefsDemo/> */}
 
-      <FocusInput/ >
+      {/* <FocusInput/ > */}
+
+      <FRParentInput/>
 
     </>
   );
