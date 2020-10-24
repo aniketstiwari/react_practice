@@ -11,6 +11,7 @@ import Inline from './Inline';
 import './appStyle.css';
 import styles from './appStyle.module.css'
 import Form from './Form';
+import LifeCycleA from './LifeCycleA';
 
 function App() {
   return (
@@ -31,7 +32,9 @@ function App() {
       the module css in the other component it will throw an error*/}
       {/* <h1 className={styles.success}>How are you</h1> */}
 
-      <Form/>
+      {/* <Form/> */}
+
+      <LifeCycleA/>
     </>
   );
 }
