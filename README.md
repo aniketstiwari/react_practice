@@ -38,3 +38,8 @@
   ![Screenshot](shallow_comparision.png)
   ![Screenshot](pure component.png)
   ![Screenshot](purecomponent_summary.png)
+
+  Error Boundary
+
+  ![Screenshot](error_boundary.png)
+  ![Screenshot](error_boundary_summary.png)
