@@ -14,6 +14,8 @@ import Form from './Form';
 import LifeCycleA from './LifeCycleA';
 import FragementDemo from './FragementDemo';
 import Table from './Table';
+import PureComp from './PureComp';
+import ParentComp from './ParentComp';
 
 function App() {
   return (
@@ -39,7 +41,9 @@ function App() {
       {/* <LifeCycleA/> */}
 
       {/* <FragementDemo/> */}
-      <Table/> 
+      {/* <Table/>  */}
+
+      <ParentComp/>
 
     </>
   );

@@ -31,3 +31,10 @@
   Error Handling Phase
 
   ![Screenshot](error_handling.png)
+
+  Pure Component
+
+  ![Screenshot](difference_pure_vs_regular_comp.png)
+  ![Screenshot](shallow_comparision.png)
+  ![Screenshot](pure component.png)
+  ![Screenshot](purecomponent_summary.png)
