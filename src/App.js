@@ -17,6 +17,7 @@ import Table from './Table';
 import PureComp from './PureComp';
 import ParentComp from './ParentComp';
 import RefsDemo from './RefsDemo';
+import FocusInput from './FocusInput';
 
 function App() {
   return (
@@ -46,7 +47,9 @@ function App() {
 
       {/* <ParentComp/> */}
 
-      <RefsDemo/>
+      {/* <RefsDemo/> */}
+
+      <FocusInput/ >
 
     </>
   );
