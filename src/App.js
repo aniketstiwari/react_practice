@@ -12,6 +12,8 @@ import './appStyle.css';
 import styles from './appStyle.module.css'
 import Form from './Form';
 import LifeCycleA from './LifeCycleA';
+import FragementDemo from './FragementDemo';
+import Table from './Table';
 
 function App() {
   return (
@@ -34,7 +36,11 @@ function App() {
 
       {/* <Form/> */}
 
-      <LifeCycleA/>
+      {/* <LifeCycleA/> */}
+
+      {/* <FragementDemo/> */}
+      <Table/> 
+
     </>
   );
 }
