@@ -16,6 +16,7 @@ import FragementDemo from './FragementDemo';
 import Table from './Table';
 import PureComp from './PureComp';
 import ParentComp from './ParentComp';
+import RefsDemo from './RefsDemo';
 
 function App() {
   return (
@@ -43,7 +44,9 @@ function App() {
       {/* <FragementDemo/> */}
       {/* <Table/>  */}
 
-      <ParentComp/>
+      {/* <ParentComp/> */}
+
+      <RefsDemo/>
 
     </>
   );
