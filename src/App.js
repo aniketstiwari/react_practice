@@ -68,7 +68,9 @@ function App() {
         <Hero heroname="joker"/>
       </ErrorBoundary> */}
 
-      <ClickCounter/>
+      {/* When we pass props to component which in turn calls HOC pattern then the below
+      componet won't receieve props directly */}
+      <ClickCounter name="Aniket"/>
       <HoverCounter/>
     </>
   );
