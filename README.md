@@ -36,7 +36,7 @@
 
   ![Screenshot](difference_pure_vs_regular_comp.png)
   ![Screenshot](shallow_comparision.png)
-  ![Screenshot](pure component.png)
+  ![Screenshot](pure_component.png)
   ![Screenshot](purecomponent_summary.png)
 
   Error Boundary
@@ -46,6 +46,6 @@
 
   High Order Components
 
-  ![Screenshot](high_order_function_2.png.png)
+  ![Screenshot](high_order_function_2.png)
 
   
