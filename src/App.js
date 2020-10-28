@@ -22,6 +22,8 @@ import FRParentInput from './FRParentInput';
 import PortalDemo from './PortalDemo';
 import Hero from './Hero';
 import ErrorBoundary from './ErrorBoundary';
+import ClickCounter from './ClickCounter';
+import HoverCounter from './HoverCounter';
 
 function App() {
   return (
@@ -59,12 +61,15 @@ function App() {
 
       {/* <PortalDemo/> */}
 
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <Hero heroname="batman"/>
       </ErrorBoundary>
       <ErrorBoundary>
         <Hero heroname="joker"/>
-      </ErrorBoundary>
+      </ErrorBoundary> */}
+
+      <ClickCounter/>
+      <HoverCounter/>
     </>
   );
 }
