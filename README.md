@@ -43,3 +43,9 @@
 
   ![Screenshot](error_boundary.png)
   ![Screenshot](error_boundary_summary.png)
+
+  High Order Components
+
+  ![Screenshot](high_order_function_2.png.png)
+
+  
