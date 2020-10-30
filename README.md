@@ -49,3 +49,7 @@
   ![Screenshot](high_order_function_2.png)
 
   
+  Render Props
+
+  ![Screenshot](render_props.png)
+  

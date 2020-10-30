@@ -18,7 +18,10 @@ class CounterRenderPropPattern extends Component {
     render() {
         return (
             <div>
-                {this.props.render(this.state.count, this.handleCounter)}
+                {/*1st way */}
+                {/* {this.props.render(this.state.count, this.handleCounter)} */}
+                {/*2nd way */}
+                {this.props.children(this.state.count, this.handleCounter)}
             </div>
         );
     }

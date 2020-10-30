@@ -85,12 +85,25 @@ function App() {
       {/* <User render={(isLoggedIn) => isLoggedIn ? "aniket" : ""}/> */}
       
       {/*1st way */}
-      <CounterRenderPropPattern render={(count, handleCounter) => (
+      {/* <CounterRenderPropPattern render={(count, handleCounter) => (
         <ClickCounterTwo count={count} handleCounter={handleCounter} />
       )} />
       <CounterRenderPropPattern render={(count, handleCounter) => (
         <HoverCounterTwo count={count} handleCounter={handleCounter} />
-      )} />
+      )} /> */}
+
+      {/*2nd way */}
+
+      <CounterRenderPropPattern> 
+        {(count, handleCounter) => (
+          <ClickCounterTwo count={count} handleCounter={handleCounter} />
+        )} 
+      </CounterRenderPropPattern>
+      <CounterRenderPropPattern> 
+        {(count, handleCounter) => (
+          <HoverCounterTwo count={count} handleCounter={handleCounter} />
+        )} 
+      </CounterRenderPropPattern>
      
     </>
   );
