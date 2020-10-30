@@ -24,6 +24,8 @@ import Hero from './Hero';
 import ErrorBoundary from './ErrorBoundary';
 import ClickCounter from './ClickCounter';
 import HoverCounter from './HoverCounter';
+import ClickCounterTwo from './ClickCounterTwo';
+import HoverCounterTwo from './HoverCounterTwo';
 
 function App() {
   return (
@@ -70,8 +72,11 @@ function App() {
 
       {/* When we pass props to component which in turn calls HOC pattern then the below
       componet won't receieve props directly */}
-      <ClickCounter name="Aniket"/>
-      <HoverCounter/>
+      {/* <ClickCounter name="Aniket"/>
+      <HoverCounter/> */}
+
+      <ClickCounterTwo/>
+      <HoverCounterTwo/>
     </>
   );
 }
