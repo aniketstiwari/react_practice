@@ -1,24 +1,11 @@
 import React, { Component } from 'react';
 
 class HoverCounterTwo extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            count: 0
-        }
-    }
-
-    handleCounter = () => {
-        this.setState((prevstate) => ({
-            count: prevstate.count + 1
-        }))
-         
-    }
-
     render() {
+        const {count, handleCounter} = this.props;
         return (
             <div>
-                <p onMouseOver={this.handleCounter}>{this.state.count} Hover Me</p>
+                <p onMouseOver={handleCounter}>{count} Hover Me</p>
             </div>
         );
     }

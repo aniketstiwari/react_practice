@@ -26,6 +26,8 @@ import ClickCounter from './ClickCounter';
 import HoverCounter from './HoverCounter';
 import ClickCounterTwo from './ClickCounterTwo';
 import HoverCounterTwo from './HoverCounterTwo';
+import User from './User';
+import CounterRenderPropPattern from './CounterRenderPropPattern';
 
 function App() {
   return (
@@ -75,8 +77,21 @@ function App() {
       {/* <ClickCounter name="Aniket"/>
       <HoverCounter/> */}
 
-      <ClickCounterTwo/>
-      <HoverCounterTwo/>
+      {/* <ClickCounterTwo/>
+      <HoverCounterTwo/> */}
+      {/* <User name={(isLoggedIn) => isLoggedIn ? "aniket" : ""}/> */}
+      {/* In react it is possible to use a prop whose value is a function to control
+      what is actually render by component */}
+      {/* <User render={(isLoggedIn) => isLoggedIn ? "aniket" : ""}/> */}
+      
+      {/*1st way */}
+      <CounterRenderPropPattern render={(count, handleCounter) => (
+        <ClickCounterTwo count={count} handleCounter={handleCounter} />
+      )} />
+      <CounterRenderPropPattern render={(count, handleCounter) => (
+        <HoverCounterTwo count={count} handleCounter={handleCounter} />
+      )} />
+     
     </>
   );
 }
