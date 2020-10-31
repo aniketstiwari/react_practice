@@ -29,6 +29,7 @@ import HoverCounterTwo from './HoverCounterTwo';
 import User from './User';
 import CounterRenderPropPattern from './CounterRenderPropPattern';
 import ComponentC from './ComponentC';
+import PostList from './components/PostList';
 
 function App() {
   return (
@@ -106,7 +107,9 @@ function App() {
         )} 
       </CounterRenderPropPattern> */}
 
-      <ComponentC/>
+      {/* <ComponentC/> */}
+
+      <PostList/>
      
     </>
   );
