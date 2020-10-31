@@ -6,9 +6,9 @@ class ComponentC extends Component {
     render() {
         return (
             <div>
-              <UserProvider value="aniket">
+              {/* <UserProvider value="aniket"> */}
                 <ComponentE/>
-              </UserProvider>
+              {/* </UserProvider> */}
             </div>
         );
     }
