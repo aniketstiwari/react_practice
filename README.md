@@ -58,3 +58,7 @@
   ![Screenshot](context_diag.png)
   ![Screenshot](context_steps.png)
   ![Screenshot](multiple_context.png)
+
+  HTTP
+
+  ![Screenshot](http.png)
