@@ -28,6 +28,7 @@ import ClickCounterTwo from './ClickCounterTwo';
 import HoverCounterTwo from './HoverCounterTwo';
 import User from './User';
 import CounterRenderPropPattern from './CounterRenderPropPattern';
+import ComponentC from './ComponentC';
 
 function App() {
   return (
@@ -94,7 +95,7 @@ function App() {
 
       {/*2nd way */}
 
-      <CounterRenderPropPattern> 
+      {/* <CounterRenderPropPattern> 
         {(count, handleCounter) => (
           <ClickCounterTwo count={count} handleCounter={handleCounter} />
         )} 
@@ -103,7 +104,9 @@ function App() {
         {(count, handleCounter) => (
           <HoverCounterTwo count={count} handleCounter={handleCounter} />
         )} 
-      </CounterRenderPropPattern>
+      </CounterRenderPropPattern> */}
+
+      <ComponentC/>
      
     </>
   );

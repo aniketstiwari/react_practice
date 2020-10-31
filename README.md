@@ -56,4 +56,4 @@
 
   ![Screenshot](context.png)
   ![Screenshot](context_diag.png)
-  
+  ![Screenshot](context_steps.png)
