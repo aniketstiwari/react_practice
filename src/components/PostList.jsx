@@ -5,23 +5,25 @@ class PostList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            posts: []
+            posts: [],
+            error: ""
         }
     }
 
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('https://jsonplaceholder.typicode.com/posts1')
             .then(response => {
                 console.log(response);
                 this.setState({posts: response.data})
             })
             .catch(error => {
                 console.log(error)
+                this.setState({error: "Error Retrieving the data"})
             })
     }
     
     render() {
-        const {posts} = this.state;
+        const {posts, error} = this.state;
         return (
             <div>
                 List of Post
@@ -35,6 +37,7 @@ class PostList extends Component {
                     )) : null
                 }
                 {/*if posts is an empty array then we will render null */}
+                { error ? <div>error</div> : null}
             </div>
         );
     }
