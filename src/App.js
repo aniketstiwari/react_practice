@@ -30,6 +30,7 @@ import User from './User';
 import CounterRenderPropPattern from './CounterRenderPropPattern';
 import ComponentC from './ComponentC';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 function App() {
   return (
@@ -109,7 +110,9 @@ function App() {
 
       {/* <ComponentC/> */}
 
-      <PostList/>
+      {/* <PostList/> */}
+
+      <PostForm/>
      
     </>
   );
